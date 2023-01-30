@@ -8,10 +8,13 @@ Uso
 A seguir está um exemplo de como usar a biblioteca para verificar a conexão com um servidor:
 
 ## Declare no projeto
-``` uses uController.ServerConnection; ```
+```
+uses uController.ServerConnection; 
+```
 ## Exemplo
 
-```procedure CheckNextIP(var IP: string);
+```
+procedure CheckNextIP(var IP: string);
 var
   ServerChecker: TServerConnectionChecker;
   ServerChecker2: TServerConnectionChecker;
@@ -45,3 +48,7 @@ Em seguida, é criada uma instância da classe TServerConnectionChecker para o e
 Se a conexão for bem-sucedida, a procedure é finalizada. Caso contrário, a variável IP é alterada para _IP_SRV_SEG e uma nova instância da classe TServerConnectionChecker é criada para este novo endereço de IP. O processo de verificação é repetido.
 
 Se a conexão com ambos os endereços de IP falhar, a variável IP é definida como '127.0.0.1'.
+
+Se você tiver dúvidas sobre o uso da classe TServerConnectionChecker, entre em contato conosco pelo WhatsApp (97) 99144-2486. Estamos sempre dispostos a ajudar.
+
+Se você encontrou essa classe útil e gostaria de fazer uma doação, por favor, envie para o PIX delmar.apui@gmail.com. Seu apoio é muito importante para nós e ajuda a mantê-lo atualizado e disponível para todos. Obrigado!
