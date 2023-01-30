@@ -16,7 +16,7 @@ uses uController.ServerConnection;
 ```
 ### Exemplo
 
-```
+```Delphi
 procedure CheckNextIP(var IP: string);
 var
   ServerChecker: TServerConnectionChecker;
