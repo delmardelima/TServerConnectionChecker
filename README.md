@@ -4,14 +4,14 @@ TServerConnectionChecker é uma biblioteca em Delphi para verificação de conex
 ##Instalação
 Adicione a biblioteca ao seu projeto Delphi importando o arquivo uController.ServerConnection.pas.
 
-Uso
+##Uso
 A seguir está um exemplo de como usar a biblioteca para verificar a conexão com um servidor:
 
-## Declare no projeto
+###Declaração no projeto
 ```
 uses uController.ServerConnection; 
 ```
-## Exemplo
+###Exemplo
 
 ```
 procedure CheckNextIP(var IP: string);
