@@ -22,16 +22,16 @@ var
   ServerChecker: TServerConnectionChecker;
   ServerChecker2: TServerConnectionChecker;
 begin
-  IP := _IP_SRV_PRINC;
+  IP := '192.168.2.1';
 
-  ServerChecker := TServerConnectionChecker.Create(IP, _PORTA_RDW);
+  ServerChecker := TServerConnectionChecker.Create(IP, '80');
   case ServerChecker.Check of
     ssConnected:
       Exit;
     ssDisconnected, ssError:
       begin
-        IP := _IP_SRV_SEG;
-        ServerChecker2 := TServerConnectionChecker.Create(IP, _PORTA_RDW);
+        IP := '192.168.2.2';
+        ServerChecker2 := TServerConnectionChecker.Create(IP, '80');
         case ServerChecker2.Check of
           ssConnected:
             Exit;
