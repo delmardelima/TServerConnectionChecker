@@ -7,13 +7,11 @@ Adicione a biblioteca ao seu projeto Delphi importando o arquivo uController.Ser
 Uso
 A seguir está um exemplo de como usar a biblioteca para verificar a conexão com um servidor:
 
-## Declare no projeto
-'''
-uses uController.ServerConnection;
-'''
-## Exemplo
-'''
-procedure CheckNextIP(var IP: string);
+### Declare no projeto
+``` uses uController.ServerConnection; ```
+### Exemplo
+
+```procedure CheckNextIP(var IP: string);
 var
   ServerChecker: TServerConnectionChecker;
   ServerChecker2: TServerConnectionChecker;
@@ -38,8 +36,8 @@ begin
         end;
       end;
   end;
-end;
-'''
+end; ```
+
 Esta é uma procedure em Delphi que usa a biblioteca TServerConnectionChecker para verificar a conexão com um servidor. A procedure recebe uma variável IP que é inicialmente definida como _IP_SRV_PRINC.
 
 Em seguida, é criada uma instância da classe TServerConnectionChecker para o endereço de IP e porta especificados. A função Check é chamada para verificar a conexão com o servidor e o resultado é avaliado com o case.
